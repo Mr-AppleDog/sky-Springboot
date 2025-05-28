@@ -52,5 +52,5 @@ public interface CategoryService {
      * @param type 类型
      * @return 分类集合
      */
-    List<Category> searchByType(String type);
+    List<Category> searchByType(Integer type);
 }

@@ -19,8 +19,8 @@ import java.util.Map;
  * @author cxy784853792
  * @version 1.0
  * @description:  分类管理
- * @date 2024/9/26 13:10
- */
+// * @date 2024/9/26 13:10
+// */
 
 @RestController
 @RequestMapping("/admin/category")
@@ -67,7 +67,7 @@ public class CategoryController {
 
     @GetMapping("/list")
     @ApiOperation("类别查询")
-    public Result<List<Category>> getCategoryByType(String type) {
+    public Result<List<Category>> getCategoryByType(Integer type) {
         List<Category> list=categoryService.searchByType(type);
         return Result.success(list);
     }

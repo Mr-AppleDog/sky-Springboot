@@ -56,5 +56,5 @@ public interface CategoryMapper {
      * @param type
      * @return
      */
-    List<Category> list(String type);
+    List<Category> list(Integer type);
 }
